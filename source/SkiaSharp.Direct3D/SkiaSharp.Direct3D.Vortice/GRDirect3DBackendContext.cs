@@ -13,8 +13,8 @@ namespace SkiaSharp
 		private IDXGIAdapter1 _adapter;
 		public new IDXGIAdapter1 Adapter { get => _adapter; set { _adapter = value; base.Adapter = value?.NativePointer ?? default; } }
 
-		private ID3D12Device2 _device;
-		public new ID3D12Device2 Device { get => _device; set { _device = value; base.Device = value?.NativePointer ?? default; } }
+		private ID3D12Device _device;
+		public new ID3D12Device Device { get => _device; set { _device = value; base.Device = value?.NativePointer ?? default; } }
 
 		private ID3D12CommandQueue _queue;
 		public new ID3D12CommandQueue Queue { get => _queue; set { _queue = value; base.Queue = value?.NativePointer ?? default; } }

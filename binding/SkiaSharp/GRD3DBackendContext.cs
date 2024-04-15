@@ -4,12 +4,17 @@ using System.Text;
 
 namespace SkiaSharp
 {
-	public class GRD3DBackendContext
+	public class GRD3DBackendContext : IDisposable
 	{
 		public nint Adapter { get; set; }
 		public nint Device { get; set; }
 		public nint Queue { get; set; }
 		public bool ProtectedContext { get; set; }
+
+		public void Dispose ()
+		{
+			// NOTE: for the future
+		}
 
 		internal GrD3DBackendContextNative ToNative ()
 		{
