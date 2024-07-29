@@ -200,7 +200,9 @@ jobs:
               displayName: Fix the Microsoft.WinFX.* file
               condition: and(succeeded(), eq(variables['DOWNLOAD_EXTERNALS'], ''))
           # display dotnet info
-          - pwsh: dotnet --info
+          - pwsh: |
+              dotnet help
+              dotnet --info
             displayName: Display all the .NET information
             condition: and(succeeded(), eq(variables['DOWNLOAD_EXTERNALS'], ''))
           # install VS
