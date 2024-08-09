@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>$(UnoTargetFrameworks)</TargetFrameworks>
+    <TargetFrameworks>net8.0</TargetFrameworks>
     <RootNamespace>SkiaSharp.Views.Windows</RootNamespace>
     <AssemblyName>SkiaSharp.Views.Windows</AssemblyName>
     <PackagingGroup>SkiaSharp.Views.Uno.WinUI</PackagingGroup>
@@ -117,9 +117,9 @@
     <WriteLinesToFile File="$(IntermediateOutputPath)_._" Lines="$(PackageDescription)" Overwrite="True" />
     <ItemGroup>
       <FileWrites Include="$(IntermediateOutputPath)_._" />
-      <_AssemblyOutputFiles Include="@(_BuildOutputInPackage->HasMetadata('TargetFramework'))" />
+      <_AssemblyOutputFiles Include="@(_BuildOutputInPackage-&gt;HasMetadata('TargetFramework'))" />
       <_WindowsAssemblyOutputFiles Include="@(_AssemblyOutputFiles)" Condition="$([MSBuild]::ValueOrDefault('%(TargetFramework)', '').Contains('-windows'))" />
-      <_SymbolOutputFiles Include="@(_TargetPathsToSymbols->HasMetadata('TargetFramework'))" />
+      <_SymbolOutputFiles Include="@(_TargetPathsToSymbols-&gt;HasMetadata('TargetFramework'))" />
       <_WindowsSymbolOutputFiles Include="@(_SymbolOutputFiles)" Condition="$([MSBuild]::ValueOrDefault('%(TargetFramework)', '').Contains('-windows'))" />
       <_WindowsPlaceholders Include="@(_WindowsAssemblyOutputFiles->'$(IntermediateOutputPath)_._')" PackagePath="lib\%(TargetFramework)\_._" Condition="'%(Extension)' == '.dll'" />
       <None Include="@(_WindowsPlaceholders)" Pack="True" />

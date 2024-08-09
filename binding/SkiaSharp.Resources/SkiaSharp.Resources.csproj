@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>$(AllTargetFrameworks)</TargetFrameworks>
+    <TargetFrameworks>net8.0</TargetFrameworks>
     <RootNamespace>SkiaSharp.Resources</RootNamespace>
     <AssemblyName>SkiaSharp.Resources</AssemblyName>
     <PackagingGroup>SkiaSharp.Resources</PackagingGroup>

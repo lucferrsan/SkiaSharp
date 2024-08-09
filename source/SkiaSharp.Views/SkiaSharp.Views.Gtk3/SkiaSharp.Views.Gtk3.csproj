@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>$(BasicTargetFrameworks)</TargetFrameworks>
+    <TargetFrameworks>net8.0</TargetFrameworks>
     <RootNamespace>SkiaSharp.Views.Gtk</RootNamespace>
     <AssemblyName>SkiaSharp.Views.Gtk3</AssemblyName>
     <SignAssembly>false</SignAssembly>

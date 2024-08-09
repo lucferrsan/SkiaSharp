@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>$(UnoTargetFrameworksReference)</TargetFrameworks>
+    <TargetFrameworks>net8.0</TargetFrameworks>
     <RootNamespace>SkiaSharp.Views.Windows</RootNamespace>
     <AssemblyName>SkiaSharp.Views.Windows</AssemblyName>
     <SignAssembly>false</SignAssembly>
@@ -9,7 +9,7 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
   <PropertyGroup>
-    <DefineConstants>$(DefineConstants);HAS_UNO_SKIA;WINUI</DefineConstants>  
+    <DefineConstants>$(DefineConstants);HAS_UNO_SKIA;WINUI</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Uno.WinUI" Version="4.9.26" />

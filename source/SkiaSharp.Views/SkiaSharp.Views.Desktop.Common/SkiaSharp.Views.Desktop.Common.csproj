@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>$(BasicTargetFrameworks);$(WindowsDesktopTargetFrameworks)</TargetFrameworks>
+    <TargetFrameworks>net8.0</TargetFrameworks>
     <RootNamespace>SkiaSharp.Views.Desktop</RootNamespace>
     <AssemblyName>SkiaSharp.Views.Desktop.Common</AssemblyName>
     <PackagingGroup>SkiaSharp.Views.Desktop.Common</PackagingGroup>

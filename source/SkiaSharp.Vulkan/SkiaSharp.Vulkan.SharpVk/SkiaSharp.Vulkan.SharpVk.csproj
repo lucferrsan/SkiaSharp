@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>$(BasicTargetFrameworks)</TargetFrameworks>
+    <TargetFrameworks>net8.0</TargetFrameworks>
     <RootNamespace>SkiaSharp</RootNamespace>
     <AssemblyName>SkiaSharp.Vulkan.SharpVk</AssemblyName>
     <SignAssembly>false</SignAssembly>

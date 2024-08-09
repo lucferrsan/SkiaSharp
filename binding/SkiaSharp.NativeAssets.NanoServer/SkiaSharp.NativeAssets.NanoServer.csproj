@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>$(BasicTargetFrameworks);$(WindowsTargetFrameworks)</TargetFrameworks>
+    <TargetFrameworks>net8.0</TargetFrameworks>
     <PackagingGroup>SkiaSharp</PackagingGroup>
     <Title>$(PackagingGroup) - Native Assets for Windows Nano Server</Title>
     <PackageNotes>This variation of the Windows native assets includes the build of libSkiaSharp.dll that does not make use of the typeface subsetting when creating XPS documents (CreateFontPackage from FONTSUB.dll).</PackageNotes>
